@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63440AE71BE92CE60054B9AF /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63440AE61BE92CE60054B9AF /* ExpenseTableViewCell.swift */; };
+		63584B1B1BF8CFF20064380F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63584B1A1BF8CFF20064380F /* SettingViewController.swift */; };
 		6384EDBB1BE63F4900049244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDBA1BE63F4900049244 /* AppDelegate.swift */; };
 		6384EDBD1BE63F4900049244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDBC1BE63F4900049244 /* ViewController.swift */; };
 		6384EDC01BE63F4900049244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6384EDBE1BE63F4900049244 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 		6384EDC81BE63F4900049244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6384EDC61BE63F4900049244 /* LaunchScreen.storyboard */; };
 		6384EDD31BE63F4900049244 /* eWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDD21BE63F4900049244 /* eWalletTests.swift */; };
 		6384EDDE1BE63F4900049244 /* eWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDDD1BE63F4900049244 /* eWalletUITests.swift */; };
+		6384EDED1BE64ACD00049244 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDEB1BE64ACD00049244 /* Expense+CoreDataProperties.swift */; };
+		6384EDEE1BE64ACD00049244 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDEC1BE64ACD00049244 /* Expense.swift */; };
+		6384EDF31BE656D100049244 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDF21BE656D100049244 /* AddExpenseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63440AE61BE92CE60054B9AF /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		63584B1A1BF8CFF20064380F /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6384EDB71BE63F4900049244 /* eWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6384EDBA1BE63F4900049244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6384EDBC1BE63F4900049244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		6384EDD91BE63F4900049244 /* eWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6384EDDD1BE63F4900049244 /* eWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eWalletUITests.swift; sourceTree = "<group>"; };
 		6384EDDF1BE63F4900049244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6384EDEB1BE64ACD00049244 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Expense+CoreDataProperties.swift"; path = "../Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6384EDEC1BE64ACD00049244 /* Expense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Expense.swift; path = ../Expense.swift; sourceTree = "<group>"; };
+		6384EDF21BE656D100049244 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddExpenseViewController.swift; path = ../AddExpenseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +111,14 @@
 			children = (
 				6384EDBA1BE63F4900049244 /* AppDelegate.swift */,
 				6384EDBC1BE63F4900049244 /* ViewController.swift */,
+				6384EDF21BE656D100049244 /* AddExpenseViewController.swift */,
+				63440AE61BE92CE60054B9AF /* ExpenseTableViewCell.swift */,
+				63584B1A1BF8CFF20064380F /* SettingViewController.swift */,
 				6384EDBE1BE63F4900049244 /* Main.storyboard */,
 				6384EDC41BE63F4900049244 /* Assets.xcassets */,
 				6384EDC61BE63F4900049244 /* LaunchScreen.storyboard */,
 				6384EDC91BE63F4900049244 /* Info.plist */,
-				6384EDC11BE63F4900049244 /* eWallet.xcdatamodeld */,
+				6384EDEF1BE64AED00049244 /* Model */,
 			);
 			path = eWallet;
 			sourceTree = "<group>";
@@ -126,6 +139,16 @@
 				6384EDDF1BE63F4900049244 /* Info.plist */,
 			);
 			path = eWalletUITests;
+			sourceTree = "<group>";
+		};
+		6384EDEF1BE64AED00049244 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6384EDEB1BE64ACD00049244 /* Expense+CoreDataProperties.swift */,
+				6384EDEC1BE64ACD00049244 /* Expense.swift */,
+				6384EDC11BE63F4900049244 /* eWallet.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6384EDED1BE64ACD00049244 /* Expense+CoreDataProperties.swift in Sources */,
+				6384EDF31BE656D100049244 /* AddExpenseViewController.swift in Sources */,
+				63440AE71BE92CE60054B9AF /* ExpenseTableViewCell.swift in Sources */,
+				63584B1B1BF8CFF20064380F /* SettingViewController.swift in Sources */,
 				6384EDC31BE63F4900049244 /* eWallet.xcdatamodeld in Sources */,
 				6384EDBD1BE63F4900049244 /* ViewController.swift in Sources */,
 				6384EDBB1BE63F4900049244 /* AppDelegate.swift in Sources */,
+				6384EDEE1BE64ACD00049244 /* Expense.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +516,7 @@
 				6384EDE41BE63F4900049244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6384EDE51BE63F4900049244 /* Build configuration list for PBXNativeTarget "eWalletTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +525,7 @@
 				6384EDE71BE63F4900049244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6384EDE81BE63F4900049244 /* Build configuration list for PBXNativeTarget "eWalletUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +534,7 @@
 				6384EDEA1BE63F4900049244 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
